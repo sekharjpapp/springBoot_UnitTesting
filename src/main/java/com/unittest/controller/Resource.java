@@ -14,11 +14,12 @@ import java.util.List;
 public class Resource {
 
 
+    @Autowired
     UsersRepository usersRepository;
 
-    public Resource(UsersRepository usersRepository){
+    /*public Resource(UsersRepository usersRepository){
         this.usersRepository =usersRepository;
-    }
+    }*/
 
     @GetMapping("/")
     public List<Users> all() {
